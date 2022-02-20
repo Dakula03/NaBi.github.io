@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body, html {
+  width: 100%;
+  height: 100px;
+}
+body {
+  background-color: #fafafa;
+  font-family: Trebuchet MS, Helvetica;
+}
+
+ header {
+width: 100%;
+padding: 10px 0.5% 0px 0.5%;
+background: transparent;
+float: left;
+position: fixed;
+}
+
+header #logo {
+  color: #fff;
+  cursor: pointer;
+}
+header #logo span{
+  font-size: 2.3em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Playfair', serif;
+}
+
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+  }
+  #about {
+    float: right;
+    width: 67%;
+  }
+}
+
+@media (max-width: 700px) {
+  #logo{
+    margin-top: 15px;
+    float: left;
+    width: 100%;
+    font-size: 1.5em;
+  }
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+#about {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+#about > a {color: #fff}
+#about > a:hover {
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+  margin-right: 7%;
+}
+
+.fixed {
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+  color: #343434;
+}
+.fixed #about a {color: #343434}
+.fixed #about a:hover {color: #7c7c7c}
+
+#top {
+  width: 100%;
+  background-image: url(https://i.pinimg.com/originals/dd/6c/ef/dd6cef910ba231b8ab4f3327c1584eff.jpg);
+background-blend-mode: multiply;
+background-color: #2e3a44;
+background-size: cover;
+text-align: center;
+color: #fff;
+
+}
+@media (min-width: 1001px) {
+  #top{
+    font-size: 3em;
+      height: 1000px;
+  }
+}
+@media (max-width: 1000px) and (min-width:651px) {
+  #top{
+    font-size: 2em;
+      height: 500px;
+  }
+}
+@media (max-width: 650px) {
+  #top{
+    font-size: 1.3em;
+    padding-top: 50%
+  }
+}
+
+#top h1{
+  padding-top: 20%;
+}
+#top h3{
+  color: #ccc;
+}
+
+#main {
+  padding: 100px 20%;
+  width: 60%;
+  float: left;
+  background-color: #f6f6f6;
+  border-top: 2px solid silver;
+  color: #484848;
+  font-size: 1.3em;
+  font-family: 'Noto Serif', serif;
+}
+
+@media (min-width: 1401px){
+  #main {
+    padding: 100px 20%;
+    width:60%;
+  }
+}
+@media (max-width: 1400px){
+  #main {
+    padding: 100px 10%;
+    width:80%;
+  }
+}
+@media (max-width: 700px){
+  #main div{
+    width: 98%!important;
+    margin-bottom: 20px;
+  }
+}
+
+#main div {
+  width: 48%;
+  margin-right: 2%;
+  float: left;
+}
+
+#main h2{font-size: 1.8em}
+#main span {color: #a0a0a0}
+
+#fashion {
+  float: left;
+  background-image: url(https://i.pinimg.com/564x/b1/27/1e/b1271e88c3b5e62a323028bd54bbf7fd.jpg);
+
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding: 100px 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+#fashion h2{font-size: 4em}
+#fashion h4 {color: #ccc; font-size: 1.5em}
+
+#fashion .img {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+#fashion .img:nth-child(odd) {
+  margin-left: 18%;
+}
+
+#fashion img{
+  background: #fafafa;
+  padding: 5px;
+  border: 2px solid silver;
+  float: left;
+  width: 100%;
+  max-width: 500px;
+}
+
+#fashion span {
+  float: left;
+  width: 100%;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+@media (max-width:700px) {
+  #fashion .img{
+    width: 80%!important;
+    margin-right: 0!important;
+    margin-left: 10%!important;
+  }
+}
+
+#contacts {
+  width:100%;
+  float: left;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  border-top: 4px solid #ccc;
+  background: f4f4f4;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair' , serif;
+  font-weight: lighter;
+}
+
+#contacts h5 {font-size: 3em; color: #4f4f4f}
+
+#form_input{
+  margin-top: 15px;
+  width: 35%;
+  margin-left: 38%;
+  font-size: 1.1em;
+}
+
+#form_input label {
+  color: #505050;
+  cursor: pointer;
+  font-size: 1.4em;
+  font-family: 'Playfair' , serif;
+}
+
+#form_input input, #form_input textarea {
+  margin-bottom: 10px;
+  width: 70%;
+  padding: 10px 2%;
+  border-radius: 7px;
+  border: 2px solid silver;
+  font-size: 0.9em;
+  color: #4a4a4a;
+}
+
+#form_input input:focus, #form_input textarea:focus {
+border-color: #333;
+}
+
+.btn {
+  float: left;
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 1.2em;
+  background-color: cornflowerblue;
+  text-shadow: #454545 0 0 2px;
+  cursor: pointer;
+  color: white;
+  font-family: 'Playfair', serif;
+}
+
+.btn:hover {
+  background-color: lightslategray;
+}
+
+.wrapper .button{
+  display:  inline-block;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  right: 620px;
+  top: 10px;
+  float:  right;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: hotpink;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: red;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: deepskyblue;
+}
+
+
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1)span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2)span{
+  color: deeppink;
+}
+.wrapper .button:nth-child(3)span{
+  color: red;
+}
+.wrapper .button:nth-child(4)span{
+  color: deepskyblue;
+}
